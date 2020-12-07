@@ -22,7 +22,7 @@ AS (
 )
 SELECT *
 FROM CTE_HighestEmployeeRating
-WHERE DRanky = 1
+WHERE DRanky = 1;
 
 WITH CTE_MostPromotions(EmployeeID, countPromotions, Dranky)
 AS (
