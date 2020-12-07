@@ -37,7 +37,7 @@ CREATE PROCEDURE insertEmployeeEvent
       RETURN
   END
 
-  EXEC [dbo].TeamEmployeeID
+  EXEC [dbo].getTeamEmployeeID
     @S_Date = @StartDate,
     @E_Date = @EndWorkDate,
     @T_Name_1 = @TeamName,
