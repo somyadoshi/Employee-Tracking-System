@@ -26,6 +26,6 @@ CREATE PROCEDURE uspGetTeamID
   END
 
   BEGIN
-      SET @T_ID = (SELECT TeamID FROM tblTeam WHERE DepartmentName = @D_Name AND DepartmentID = @O_ID_1)
+      SET @T_ID = (SELECT TeamID FROM tblTeam WHERE TeamName = @T_Name AND DepartmentID = @D_ID_1)
   END
 GO
