@@ -20,12 +20,8 @@ VALUES ('Software Engineer', 'Software Engineers leverage engeering principles t
 GO
 
 INSERT INTO tblEmployee (FName, LName, DOB)
-VALUES ('Somya', 'Doshi', '08-28-1999'),
-  ('Kristie', 'Walsh', '04-12-1994'),
-  ('Zoey', 'Rose', '01-11-1998'),
-  ('Ranjith', 'Ramkishore', '01-14-1999'),
-  ('Varun', 'Patel', '10-14-1999');
-GO
+SELECT TOP 300000 CustomerFname, CustomerLname, DateOfBirth
+FROM PEEPS.dbo.tblCUSTOMER
 
 INSERT INTO tblEvent_Type (EventTypeName, EventTypeDesc)
 VALUES ('Hired', 'A person was hired to the company'),
